@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/vue.js"></script>
+    <script src="/js/vue-router.js"></script>
+    <title>CHAT</title>
+    <style>
+        * {
+            font-family: Montserrat
+        }
+
+        #app{
+            display: flex;
+            justify-content: center;
+        }
+
+        form{
+            width: 300px;
+            text-align: center;
+        }
+
+        form input {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px 10px;
+        }
+
+        form input:last-of-type{
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <router-view></router-view>
+    </div>
+</body>
+<!-- componentes -->
+<script src="./js/components/home.js"></script>
+<script src="./js/components/registro.js"></script>
+<script src="./js/components/dashboard.js"></script>
+
+<script src="./js/routes.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/gestion.socket.js"></script>
+</html>
